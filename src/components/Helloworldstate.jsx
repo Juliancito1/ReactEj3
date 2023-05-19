@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 const Helloworldstate = () => {
-const [world, setWorld] = useState('Hello World');
+const [msj, setMsj] = useState('');
     return (
         <div>
-            <h1>{world}!</h1>
-            <button onClick={() => setWorld(world + ' (from changed state)')}>Click me</button>
+            <h1>Hello my friend {msj}!</h1>
+            <button onClick={() => setMsj('(from changed state)')}>Click me</button>
         </div>
     );
 };
